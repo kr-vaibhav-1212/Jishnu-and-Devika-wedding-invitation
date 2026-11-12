@@ -6,8 +6,11 @@
 <meta name="theme-color" content="#FAF8FC">
 <meta name="description" content="The wedding invitation of Devika Nair & Jishnu Sreekuttan — 24 January 2027, Malayinkeezh, Thiruvananthapuram.">
 <title>Devika & Jishnu — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap"></noscript>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap');
 
   :root {
     --purple-main: #4a2856;
@@ -50,7 +53,7 @@
     position:absolute;
     opacity:.65;
     animation:floatUp linear infinite;
-    filter:drop-shadow(0 4px 6px rgba(102,59,114,.1));
+    will-change:transform;
   }
   .floater.petal{font-size:18px;color:#cbb8db}
   .floater.flower{font-size:20px;color:#967bb6}
@@ -170,6 +173,7 @@
     border:1px solid var(--lavender-border);
     background:rgba(255,255,255,0.9);
     backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
     border-radius:14px;
     box-shadow:0 8px 20px rgba(102,59,114,0.06);
   }
@@ -268,6 +272,7 @@
     border-radius: 20px;
     box-shadow: 0 25px 60px rgba(102, 59, 114, 0.12);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     overflow: hidden;
     position: relative;
   }
@@ -345,6 +350,7 @@
     color: var(--purple-main);
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--lavender-border);
     padding: 6px 12px;
     border-radius: 20px;
@@ -519,6 +525,7 @@
     box-shadow:0 10px 30px rgba(102,59,114,0.15);
     transition:transform .2s ease,background .2s ease;
     backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
   }
   .music-toggle:hover{transform:translateY(-3px);background:var(--purple-soft)}
   .music-toggle span{font-size:19px}
@@ -599,6 +606,10 @@
 }
   @media (prefers-reduced-motion:reduce){
     .flower-shower{display:none!important}
+    .floater{animation:none!important;opacity:0!important}
+    .scroll-hint{animation:none!important}
+    .reveal{opacity:1!important;transform:none!important}
+    *{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
   }
 
 </style>
@@ -661,7 +672,7 @@
           <div class="event-date">24 January 2027 · 10:00 AM - 10:30 AM</div>
           <div class="event-meta">
             <p>Venue — <a href="https://maps.app.goo.gl/N7A1tEqQ9oquzYzKA" target="_blank">Sree krishna swami temple, malayinkeezh, Thiruvananthapuram</a></p>
-            <div><b>Celebration</b> — Promising of a lifetime together in the sacred place. </div>
+            <div><b>Celebration</b> — Promising of a lifetime together in the sacred place </div>
           </div>
         </article>
 
@@ -715,31 +726,31 @@
 
           <div class="coverflow-track" id="coverflowTrack">
             <figure class="coverflow-card" data-index="0">
-              <img src="memory1.jpeg" alt="Memory 1">
+              <img src="memory1.jpeg" alt="Memory 1" loading="lazy" decoding="async" width="400" height="560">
               <figcaption>Always, together</figcaption>
             </figure>
             <figure class="coverflow-card" data-index="1">
-              <img src="memory2.jpeg" alt="Memory 2">
+              <img src="memory2.jpeg" alt="Memory 2" loading="lazy" decoding="async" width="400" height="560">
               <figcaption>A beautiful beginning</figcaption>
             </figure>
             <figure class="coverflow-card" data-index="2">
-              <img src="memory3.jpeg" alt="Memory 3">
+              <img src="memory3.jpeg" alt="Memory 3" loading="lazy" decoding="async" width="400" height="560">
               <figcaption>Our favourite moments</figcaption>
             </figure>
             <figure class="coverflow-card" data-index="3">
-              <img src="memory4.jpeg" alt="Memory 4">
+              <img src="memory4.jpeg" alt="Memory 4" loading="lazy" decoding="async" width="400" height="560">
               <figcaption>Smiles &amp; Sunshine</figcaption>
             </figure>
             <figure class="coverflow-card" data-index="4">
-              <img src="memory5.jpeg" alt="Memory 5">
+              <img src="memory5.jpeg" alt="Memory 5" loading="lazy" decoding="async" width="400" height="560">
               <figcaption>Cherished Memories</figcaption>
             </figure>
             <figure class="coverflow-card" data-index="5">
-              <img src="memory6.jpeg" alt="Memory 6">
+              <img src="memory6.jpeg" alt="Memory 6" loading="lazy" decoding="async" width="400" height="560">
               <figcaption>Towards Forever</figcaption>
             </figure>
             <figure class="coverflow-card" data-index="5">
-              <img src="memory7.jpeg" alt="Memory 7">
+              <img src="memory7.jpeg" alt="Memory 7" loading="lazy" decoding="async" width="400" height="560">
               <figcaption>Lifelong</figcaption>
             </figure>
           </div>
@@ -827,7 +838,7 @@
 
         <div class="faq-item reveal">
           <button class="faq-question">
-            <span>TULIP._.CRAFT aarde aan?</span>
+            <span>TULIPS._.CRAFT aarde aan?</span>
             <span class="faq-icon">┼</span>
           </button>
           <div class="faq-answer">
@@ -844,14 +855,15 @@
             Bethel auditorium ,chemboor.
           </div>
         </div>
-          
-          <div class="faq-item reveal">
+
+        
+        <div class="faq-item reveal">
           <button class="faq-question">
-            <span>Arranged or Love Marriage?</span>
+            <span>Love or Arranged ?</span>
             <span class="faq-icon">┼</span>
           </button>
           <div class="faq-answer">
-            Ee chodhyam vakkan paranja penninem cherkanem chothichal mathi.
+            Ee chodyam vaykkan paranja penninem cherkanem chothichal mathi.
           </div>
         </div>
       </div>
@@ -893,7 +905,7 @@
 <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle ambiance music" aria-pressed="false"><span>♪</span></button>
 <div class="music-label">Ambiance</div>
 
-<audio id="bgMusic" loop preload="auto">
+<audio id="bgMusic" loop preload="none">
   <source src="wedding-song.mpeg" type="audio/mpeg">
   <source src="wedding-song.ogg" type="audio/ogg">
 </audio>
@@ -918,7 +930,17 @@
     $("seconds").textContent = String(s).padStart(2,"0");
   }
   tick();
-  setInterval(tick, 1000);
+  let countdownInterval = setInterval(tick, 1000);
+
+  // Pause countdown when tab hidden to save CPU/battery
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      clearInterval(countdownInterval);
+    } else {
+      tick();
+      countdownInterval = setInterval(tick, 1000);
+    }
+  });
 
   // Scroll reveal
   const observer = new IntersectionObserver(entries => {
@@ -1032,6 +1054,7 @@
     const colors = ["#967bb6", "#b6a2c7", "#cbb8db", "#d8c8e5", "#80618f"];
     const flowerCount = 102;
 
+    const frag = document.createDocumentFragment();
     for (let i = 0; i < flowerCount; i++) {
       const flower = document.createElement("span");
       flower.className = "falling-flower";
@@ -1043,8 +1066,9 @@
       flower.style.setProperty("--drift", `${-70 + Math.random() * 140}px`);
       flower.style.setProperty("--opacity", `${0.55 + Math.random() * 0.35}`);
       flower.style.setProperty("--flower-color", colors[Math.floor(Math.random() * colors.length)]);
-      shower.appendChild(flower);
+      frag.appendChild(flower);
     }
+    shower.appendChild(frag);
 
     // Remove the temporary animation layer after all flowers have fallen.
     window.setTimeout(() => shower.remove(), 9000);
